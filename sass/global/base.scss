@@ -1,0 +1,25 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2, span, p, b {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+}

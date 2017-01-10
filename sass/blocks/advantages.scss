@@ -1,0 +1,143 @@
+.advantages {
+  text-transform: uppercase;
+  font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 20px 42px;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 21px;
+}
+.advantages__pic {
+  width: 40px;
+  height: 35px;
+  margin-top: 4px;
+  fill: $lightblue;
+}
+.advantages__title {
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  margin: 13px 0 0 10px;
+  width: 77%; /* для переноса advantages__text на мобилке */
+}
+.advantages__text {
+  max-width: 100%;
+  font-size: $text-font-size;
+  margin: 17px 0 0 50px;
+}
+.advantages--grey {
+  background-color: $lightgrey;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.advantages__item--grey {
+  margin: 0;
+  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+.advantages__item--grey .advantages__title {
+  margin-top: 28px;
+  margin-left: 0;
+}
+.advantages__item--grey .advantages__num {
+  margin-top: 10px;
+  margin-left: 0;
+}
+.advantages__item--grey .advantages__text {
+  margin: 20px 30px 0;
+}
+/* Разделитель на мобилке серых блоков */
+.advantages__item--grey:before {
+  content: '';
+  width: 87.5%;
+  height: 1px;
+  top: 0;
+  left: 6.25%;
+  position: absolute;
+  background-color: #d6d6d6;
+}
+.advantages__item--grey:first-of-type:before {
+  display: none;
+}
+.advantages__br-attraction {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .advantages__item {
+    width: 33.33%;
+    display: flex;
+    padding: 0 47px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 55px;
+    margin-bottom: 42px;
+  }
+  .advantages__item--souvenirs {
+    order: 2;
+  }
+  .advantages__pic {
+    width: 75px;
+    height: 75px;
+    margin-top: 3px;
+  }
+  .advantages__title {
+    font-size: $tablet-title-font-size;
+    margin-top: 27px;
+    margin-left: 0;   
+  }
+  .advantages__text {
+    margin: 21px 0 0;
+    line-height: 20px;
+  }
+  .advantages__item--grey {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    padding: 0 50px 20px;
+  }
+  .advantages__item--grey .advantages__text {
+    margin: 23px 0 0;
+  }
+  .advantages__item--grey:before {
+    display: none;
+  }
+  .advantages__br-attraction {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__item {
+    padding: 0 74px 20px;
+    margin-bottom: 63px;
+  }
+  .advantages__item--grey {
+    padding: 0 60px 4px;
+  }
+  .advantages__item--grey .advantages__title {
+    width: 150px;  /* и тут х3 как ограничить */
+  }
+  .advantages__br-attraction {
+    /* п.11 */
+  }
+}

@@ -1,0 +1,84 @@
+.why-better {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-family;
+  background-color: $lightblue;
+}
+
+.why-better__br--reverse {
+  display: none;
+}
+
+.why-better__reason {
+  background-color: $lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px 23px 43px;
+}
+
+.why-better__reason--reverse {
+  padding-top: 25px;
+}
+
+.why-better__title {
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  margin-top: 15px;
+}
+
+.why-better__num {
+  font-size: $text-font-size; 
+  margin-top: 13px;
+}
+
+
+.why-better__text {
+  font-size: $text-font-size; 
+  box-sizing: border-box;
+  margin-top: 18px;
+}
+.why-better__pic { 
+  height: 255px; 
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .why-better {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .why-better__reason {
+    width: 33.33%;
+    padding: 28px 45px 20px 45px;
+  }
+  .why-better__pic {
+    width: 66.66%;
+  }
+  .why-better__pic img {
+    height: 255px; 
+  }
+  .why-better__text {
+    margin-top: 22px;
+    line-height: 20px;
+  }
+  .why-better--reverse{
+    flex-direction: row-reverse; 
+  }
+  .why-better__title {
+    font-size: $tablet-title-font-size;
+    width: 151px;
+  }
+}
+
+@media (min-width: 1200px)  {
+  .why-better__reason {
+    padding: 36px 55px 45px;
+  }
+  .why-better__reason--reverse {
+    padding: 36px 85px 45px;
+  }
+}
